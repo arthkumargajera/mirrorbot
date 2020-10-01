@@ -172,11 +172,6 @@ extract() {
     7z x "$arg" -o"$a_dir"
     local code=$?
     ;;
-  *.vhd)
-    a_dir=$(expr "$arg" : '\(.*\).vhd')
-    7z x "$arg" -o"$a_dir"
-    local code=$?
-    ;;
   *.xar)
     a_dir=$(expr "$arg" : '\(.*\).xar')
     7z x "$arg" -o"$a_dir"
